@@ -1,0 +1,17 @@
+package com.team2.mvc.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class BoardController {	
+	@RequestMapping("/board-notice") //주소창에 주소 + /boardMain이라 입력하면 webapp-WEBINF-views-board-board로 이동합니다.
+	public String notice() {
+		return "board/board-notice";
+	}
+	@RequestMapping("/board-best")
+	public String best() {
+		return "board/board-best";
+	}
+
+}

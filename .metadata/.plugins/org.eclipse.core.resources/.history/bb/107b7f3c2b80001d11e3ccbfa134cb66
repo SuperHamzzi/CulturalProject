@@ -1,0 +1,5 @@
+package com.team2.mvc.controller;
+
+public class MainController {
+
+}

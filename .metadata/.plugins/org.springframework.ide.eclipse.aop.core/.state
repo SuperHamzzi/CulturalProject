@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Team3"/>
+<aop-project name="Team2"/>
+<aop-project name="04_SpringMVC2_API0"/>
+<aop-project name="04_SpringMVC2_API"/>
+</aop-reference-model>

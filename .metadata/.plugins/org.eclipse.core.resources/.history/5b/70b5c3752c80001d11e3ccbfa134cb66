@@ -1,0 +1,98 @@
+/* * * 헤더 * * */
+/* 헤더바 */
+.container.header {
+  padding: 1.5rem 7.5rem;
+}
+
+/* 로고 */
+.logo {
+  margin-bottom: 0;
+}
+.logo a {
+  font-family: 'Ansungtangmyun-Bold';
+  color: var(--clr-green);
+  text-decoration: none;
+}
+
+
+/* 검색바 */
+.form-group {
+  padding: 0;
+  border: none;
+  background-color: var(--clr-beige);
+}
+.fi-search {
+  color: var(--clr-green);
+  transform: scale(1.25);
+}
+
+/* 로그인 버튼 */
+.btn-sm {
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.btn-primary {
+  background-color: var(--clr-green);
+  border-color: var(--clr-green);
+}
+
+
+/* * * 네비 * * */
+/* 네비바 */
+.container.nav {
+  max-width: 100%;
+  background-color: var(--clr-green);
+}
+
+/* 네비 아이템 */
+.nav-item::after {
+  content: '';
+  position: absolute;
+  top: 50%; right: 0;
+  transform: translateY(-50%);
+  height: 25px;
+  border-right: 2px solid var(--clr-beige);
+}
+.nav-item:last-child::after {
+  border-right: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 1.25rem 3.75rem;
+  color: var(--clr-white);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* 네비 아이템 드롭다운 메뉴 */
+.dropdown-menu {
+  min-width: 14rem;
+  padding: 0.75rem 0;
+  font-size: 1.125rem;
+  border-left: 3px solid var(--clr-green) !important;
+  border-radius: 0.25rem !important;
+}
+
+/* 풋터 */
+.footer_color {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--clr-white), var(--bs-bg-opacity)) !important;
+}
+
+.footer.text-light {
+  color: #677788 !important;
+}
+
+.nav-link-light {
+  color: #677788 !important;
+}
+
+hr {
+  height: 50px;
+  background-color: #677788;
+}
+
+.footer_expression {
+  text-align: center;
+}

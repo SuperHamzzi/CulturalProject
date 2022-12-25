@@ -1,0 +1,12 @@
+package com.team2.mvc.entity;
+
+public class Member {
+	private int
+	private String
+	private String
+	private String
+	private int
+	private String
+	private String
+	private String
+}
