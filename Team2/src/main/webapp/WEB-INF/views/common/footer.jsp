@@ -18,10 +18,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Main Theme Styles + Bootstrap -->
-  <link rel="stylesheet" media="screen" href="css/theme.css">
+  <link rel="stylesheet" media="screen" href="${path}/resources/css/theme.css">
   <!-- 직접 작성한 Styles -->
-  <link rel="stylesheet" media="screen" href="css/common/common.css">
-  <link rel="stylesheet" media="screen" href="css/common/header-footer.css">
+  <link rel="stylesheet" media="screen" href="${path}/resources/css/common/common.css">
+  <link rel="stylesheet" media="screen" href="${path}/resources/css/common/header-footer.css">
 </head>
 
 
@@ -57,11 +57,11 @@
                 id="langSwitcher" data-bs-toggle="dropdown" role="button" aria-expanded="false"><i
                   class="fi-globe mt-n1 me-2 align-middle"></i>Eng</a>
               <ul class="dropdown-menu dropdown-menu-dark my-1" aria-labelledby="langSwitcher">
-                <li><a class="dropdown-item text-nowrap py-1" href="#"><img class="me-2" src="img/flags/de.png"
+                <li><a class="dropdown-item text-nowrap py-1" href="#"><img class="me-2" src="${path}/resources/img/flags/de.png"
                       width="20" alt="Deutsch">Deutsch</a></li>
-                <li><a class="dropdown-item text-nowrap py-1" href="#"><img class="me-2" src="img/flags/fr.png"
+                <li><a class="dropdown-item text-nowrap py-1" href="#"><img class="me-2" src="${path}/resources/img/flags/fr.png"
                       width="20" alt="Français">Français</a></li>
-                <li><a class="dropdown-item text-nowrap py-1" href="#"><img class="me-2" src="img/flags/es.png"
+                <li><a class="dropdown-item text-nowrap py-1" href="#"><img class="me-2" src="${path}/resources/img/flags/es.png"
                       width="20" alt="Español">Español</a></li>
               </ul>
             </div>

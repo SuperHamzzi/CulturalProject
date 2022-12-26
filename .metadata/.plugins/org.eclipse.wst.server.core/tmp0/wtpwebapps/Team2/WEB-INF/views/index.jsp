@@ -93,10 +93,10 @@
               <a class="nav-link" href="/mvc/search">문화재</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">컬렉션</a>
+              <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"=>컬렉션</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="event-main">다른 사람의 컬렉션</a></li>
-                <li><a class="dropdown-item" href="event-detail">나의 컬렉션</a></li>
+                <li><a class="dropdown-item" href="/mvc/collection-list">다른 사람의 컬렉션</a></li>
+                <li><a class="dropdown-item" href="/mvc/collection-main">나의 컬렉션</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">

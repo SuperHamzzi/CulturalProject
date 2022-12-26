@@ -157,7 +157,7 @@
         </tbody>  
       </tr>
         </table>
-        <div class="create-board"><span><a href="/board-write.html">작성하기</a></span></div>
+        <div class="create-board"><span><a href="/mvc/board-write">작성하기</a></span></div>
 
       <!-- 페이지 넘기기-->
       <div class="my-5 d-flex justify-content-center ">

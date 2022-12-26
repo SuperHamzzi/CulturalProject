@@ -43,78 +43,7 @@
   </div>
 
   <main class="page-wrapper">
-    <header class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column p-0" data-scroll-header>
-      <!-- 헤더 -->
-      <div class="container header">
-        <!-- <a class="navbar-brand me-3 me-xl-4" href="city-guide-home-v1.html"><img class="d-block" src="img/logo/logo-dark.svg" width="116" alt="Finder"></a> -->
-        <h1 class="logo"><a href="index.html">나만의 박물관</a></h1>
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
-            class="navbar-toggler-icon"></span></button>
-        <a class="btn btn-primary btn-sm rounded-pill order-lg-3" href="city-guide-add-business.html">로그인</a>
-
-        <div class="col-xl-6 col-lg-9 col-md-10 mx-auto px-0">
-          <!-- Search form-->
-          <form class="form-group d-block d-md-flex position-relative rounded-md-pill mb-2 mb-sm-4 mb-lg-0">
-            <div class="input-group input-group-lg">
-              <input class="form-control mx-auto" type="text" placeholder="문화재를 검색하세요.">
-              <span class="input-group-text text-muted rounded-pill pe-3"><i class="fi-search"></i></span>
-            </div>
-            <hr class="d-md-none my-2">
-          </form>
-        </div>
-      </div>
-
-      <!-- 네비 -->
-      <div class="container nav">
-        <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
-          <ul class="navbar-nav navbar-nav-scroll" style="max-height: 35rem; margin: 0 auto;">
-            <!-- Menu items-->
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="search.html">문화재</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">컬렉션</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="city-guide-catalog.html">Grid with Filters</a></li>
-                <li><a class="dropdown-item" href="city-guide-single.html">Single Place - Gallery</a></li>
-                <li><a class="dropdown-item" href="city-guide-single-info.html">Single Place - Info</a></li>
-                <li><a class="dropdown-item" href="city-guide-single-reviews.html">Single Place - Reviews</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">테마별 안내</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="city-guide-account-info.html">Personal Info</a></li>
-                <li><a class="dropdown-item" href="city-guide-account-favorites.html">Favorites</a></li>
-                <li><a class="dropdown-item" href="city-guide-account-reviews.html">Reviews</a></li>
-                <li><a class="dropdown-item" href="city-guide-account-notifications.html">Notifications</a></li>
-                <li><a class="dropdown-item" href="signin-light.html">Sign In</a></li>
-                <li><a class="dropdown-item" href="signup-light.html">Sign Up</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">행사일정</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">커뮤니티</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="city-guide-about.html">공지사항</a></li>
-                <li><a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">베스트게시판</a></li>
-                <li><a class="dropdown-item" href="city-guide-contacts.html">자유게시판</a></li>
-                <li><a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">질문게시판</a></li>
-                <li><a class="dropdown-item" href="city-guide-404.html">고객센터</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <jsp:include page="../common/header.jsp"/>
 
 <!-- 상단 프로필-->
     <section class="mb-3">
