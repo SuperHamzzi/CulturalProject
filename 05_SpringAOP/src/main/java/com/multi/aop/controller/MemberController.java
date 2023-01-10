@@ -1,13 +1,17 @@
 package com.multi.aop.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.google.gson.Gson;
 import com.multi.aop.model.vo.Member;
 import com.multi.aop.service.MemberService;
 
@@ -52,47 +56,54 @@ public class MemberController {
 			return "member/loginFailed";
 		}
 	}
+	
+	
 	@RequestMapping("/join.do")
 	public String join(Member m) {
 		int result = service.insertMember(m);
 		
-		if(result > 0) {
+		if(result > 0 ) {
 			return "member/joinSuccess";
 		}else {
-			return " member/joinFailed";
+			return "member/joinFailed";
 		}
 	}
 	
-	//AJAX 설계 진행
+	// AJAX 설계 진행
 	
-	// ID 중복 확인하는 메소드(AJAX 버전)
-	@ResponseBody // return 값이 view 이름이 아닌 문자열이나 몸통이 될대 사용하는 어노테이션
-	@RequestMapping(value="/checkId.do",produces= "text/html; charset=utf-8:")
+	// ID 중복 확인하는 메소드 (AJAX 버전)
+	@ResponseBody // return 값이 view 이름이 아닌 문자열이나 몸통이 될때 사용하는 어노테이션
+	@RequestMapping(value="/checkId.do", produces = "text/html; charset=utf-8") // media type, JSON이 아닌 일반 문자열일때
 	public String checkId(Member m) throws IllegalAccessException{
 		Member member = service.selectOneMember(m);
-		System.out.println("check member :" +m);
-		if(member != null) {
+		System.out.println("check member : " + m);
+		if (member != null) {
 			return "1";
 		}else {
-			return "0"; 
+			return "0";
 		}
 	}
+	
+	// Member list - json으로 반환하는 코드 (AJAX)
+	@ResponseBody // text, xml, json 다 사용 가능
+	@RequestMapping(value="/selectAllMember.do", produces = "application/json; charset=utf-8") // media type을 JSON 넘겨줄때 사용
+	public String selectAllMember() {
+		List<Member> list = service.selectAllMember();
+		System.out.println("list : " + list);
+		return new Gson().toJson(list);
+	}
+
+	// 에러 처리하는 곳
+	@RequestMapping("/error.do")
+	public String error() {
+		return "common/error";
+	}
+	
+	// 메소드에서 에러 발생한 경우 공통으로 처리하는 코드부
+	@ExceptionHandler(RuntimeException.class)
+	public String errorHandler() {
+		return "redirect:error.do";
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

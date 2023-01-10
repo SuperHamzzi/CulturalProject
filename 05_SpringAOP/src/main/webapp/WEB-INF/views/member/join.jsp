@@ -10,20 +10,18 @@
 <meta charset="UTF-8">
 <title>Login</title>
 <script type='text/javascript' src='http://code.jquery.com/jquery-3.3.1.js'></script>
-
 </head>
 <body>
 	<form action="${path}/join.do" method="post">
 		<fieldset>
 			<legend>회원가입</legend>		
-			아이디 : <input type="text" name="id" id="id"> <span id="checkId"></span> <br>
+			아이디 : <input type="text" name="id" id="id"> <span id="checkId">초기상태</span><br>
 			비밀번호 :  <input type="password" name="pw" ><br>
 			이름 :  <input type="text" name="name" ><br>
 			나이 :  <input type="text" name="age" ><br>
 			<input type="submit" value="회원가입" >
 		</fieldset>
 	</form>
-	
 	
 	<script type="text/javascript">
 		//중복확인을 키가 타이핑 될때 마다 호출
@@ -33,7 +31,7 @@
 				$('#checkId').html('입력중');
 				$.ajax({
 					url : '${path}/checkId.do',
-					data : {id:id},
+					data : {id : id},
 					type : 'get',
 					success : function(str){
 						if(str == '0'){
@@ -49,8 +47,6 @@
 			});
 		})
 	</script>
-	
-	
 	
 </body>
 </html>

@@ -99,12 +99,15 @@
 		<item value="org.springsource.sts:3.9.20.202112262300-CI-B2026"/>
 	</list>
 	<section name="ExternalProjectImportWizard">
-		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\프로젝트\TeamPro"/>
+			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\손봤을까\pj02"/>
+			<item value=""/>
 			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\합치기\pj02"/>
 			<item value="C:\Users\gksrn_pl1\Downloads\Team2_MVC 이 프로젝트로 구상하세요 강사님 피드백"/>
 			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\Team2_MVC"/>
@@ -112,9 +115,11 @@
 			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\Team2_MVC_221230_login"/>
 			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\mymuseum_frontcode\Team2_MVC"/>
 			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\team2t"/>
-			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\07_SpringWebSocket.zip"/>
+			<item value="C:\Users\gksrn_pl1\Downloads\06_SpringREST.zip"/>
+			<item value="C:\Users\gksrn_pl1\Downloads\work_space_spring_230105.zip"/>
 			<item value="C:\Users\gksrn_pl1\Downloads\05_SpringAOP.zip"/>
 			<item value="C:\Users\gksrn_pl1\Downloads\Team2_MVC 이 프로젝트로 구상하세요 강사님 피드백.zip"/>
 			<item value=""/>
