@@ -105,9 +105,9 @@
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
 			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\프로젝트\TeamPro"/>
 			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\손봤을까\pj02"/>
-			<item value=""/>
 			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\합치기\pj02"/>
 			<item value="C:\Users\gksrn_pl1\Downloads\Team2_MVC 이 프로젝트로 구상하세요 강사님 피드백"/>
 			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\Team2_MVC"/>
@@ -117,6 +117,7 @@
 			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\team2t"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\11_MiniProject.zip"/>
 			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\08_NaverSearchAPI.zip"/>
 			<item value="C:\Users\gksrn_pl1\OneDrive\바탕 화면\07_SpringWebSocket.zip"/>
 			<item value="C:\Users\gksrn_pl1\Downloads\06_SpringREST.zip"/>

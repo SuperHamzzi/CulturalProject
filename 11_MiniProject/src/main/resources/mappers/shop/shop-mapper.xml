@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<mapper namespace="com.multi.mvc.shop.model.mapper.ShopMapper">
+
+	<insert id="insertProduct" parameterType="com.multi.mvc.shop.model.vo.Product">
+		insert into Product 
+		(pNo, title, link, image, lprice, hprice, mallName, 
+		productId, productType, maker, brand, category1, category2, category3, category4) 
+		values(0,#{title},#{link},#{image},#{lprice},#{hprice},#{mallName},
+		#{productId},#{productType},#{maker},#{brand},#{category1},#{category2},#{category3},#{category4});
+	</insert>
+	
+	
+</mapper>
